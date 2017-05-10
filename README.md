@@ -16,15 +16,18 @@ This repo contains the code for server written in Python running on the raspberr
 
 ### Installation
 
-Place server.py somewhere in your raspberry.
+Place *server.py* somewhere in your raspberry.
+Change these values in *server.py*:
+```
+PI_ADDRESS = '[IP ADDRESS OF YOUR RASPBERRY PI]'
+SLIDESHOW_ROOT_FOLDER = '[PATH TO YOUR SLIDESHOW FOLDERS]'
+```
+
 To run it after every boot, append this line to the file *~/.bashrc*
 
 ```
 python /home/pi/development/python/server.py &
 ```
-
-### License
-<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
 ### Thanks
 This side project was greatly inspired by 
@@ -35,3 +38,6 @@ This side project was greatly inspired by
 
 Without thoses resources, it would probably have never seen the bright
 lights of Github repos!
+
+### License
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
