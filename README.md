@@ -18,14 +18,14 @@ This repo contains the code for server written in Python running on the raspberr
 
 Place *server.py* somewhere in your raspberry.
 Change these values in *server.py*:
-```
+```python
 PI_ADDRESS = '[IP ADDRESS OF YOUR RASPBERRY PI]'
 SLIDESHOW_ROOT_FOLDER = '[PATH TO YOUR SLIDESHOW FOLDERS]'
 ```
 
 To run it after every boot, append this line to the file *~/.bashrc*
 
-```
+```python
 python /home/pi/development/python/server.py &
 ```
 
