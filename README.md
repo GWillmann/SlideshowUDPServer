@@ -2,7 +2,7 @@
 
 ## Made with <3 with a Raspberry Pi 3
 
-![Banner](https://cdn-images-1.medium.com/max/1600/1*S1oN3nUjgGENLyxTuKrAnQ.png)
+![Banner](https://cdn-images-1.medium.com/max/1600/1*bYlv05k5u1fToVuXXirs1w.png)
 
 ### Introduction
 
