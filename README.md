@@ -10,7 +10,8 @@ I have made a digital photo frame as a side project.
 @See details [here](https://medium.com/@Gr3g0ire/un-cadre-photo-digital-19aee3bfddbc) (sorry in French for now) 
 To simplify the control of the slideshow, I have written a quick app with React Native.
 
-The app repo is =>  
+The server repo is ==> https://github.com/GWillmann/SlideshowUDPServer
+The app repo is => https://github.com/GWillmann/SlideshowApp
 
 This repo contains the code for server written in Python running on the raspberry
 
@@ -25,7 +26,7 @@ SLIDESHOW_ROOT_FOLDER = '[PATH TO YOUR SLIDESHOW FOLDERS]'
 
 To run it after every boot, append this line to the file *~/.bashrc*
 
-```python
+```bash
 python /home/pi/development/python/server.py &
 ```
 
