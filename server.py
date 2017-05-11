@@ -5,12 +5,14 @@ import json
 import glob
 import subprocess
 
-PI_ADDRESS = '[IP ADDRESS OF YOUR RASPBERRY PI]'
+PI_ADDRESS = ''
+#PI_ADDRESS = 'localhost'
 PI_PORT = 10000
 APP_PORT = 10001
-SLIDESHOW_ROOT_FOLDER = '[PATH TO YOUR SLIDESHOW FOLDERS]'
+SLIDESHOW_ROOT_FOLDER = '/mnt/wdmycloud/Shared Pictures/'
+#SLIDESHOW_ROOT_FOLDER = '/Applications/'
 
-# Create a UDP/IP socket
+# Create a TCP/IP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # Bind the socket to the port
@@ -55,6 +57,10 @@ while True:
     action, param = data.split(';')
 
     dataToSendBack = ''
+    if action == 'whois':
+        print >>sys.stderr, " IM RIGHT HERE !!!" + param
+        dataToSendBack = 'iam;'
+
     if is_running() == False and action =="start":
         process = launch_slideshow(SLIDESHOW_ROOT_FOLDER + param)
         print >>sys.stderr, "Diaporama en cours " + param

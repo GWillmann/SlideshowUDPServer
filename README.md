@@ -18,9 +18,8 @@ This repo contains the code for server written in Python running on the raspberr
 ### Installation
 
 Place *server.py* somewhere in your raspberry.
-Change these values in *server.py*:
+Change this value in *server.py*:
 ```python
-PI_ADDRESS = '[IP ADDRESS OF YOUR RASPBERRY PI]'
 SLIDESHOW_ROOT_FOLDER = '[PATH TO YOUR SLIDESHOW FOLDERS]'
 ```
 
